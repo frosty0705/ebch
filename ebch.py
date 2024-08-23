@@ -510,7 +510,7 @@ async def mint(private_key, contract):
     account = Account.from_key(private_key)
     from_address = account.address
     contract = w3.eth.contract(address=contract_address, abi=contract_abi)
-    gas_price = w3.to_wei('707581', 'gwei')  # Corrected capitalization of 'Wei'
+    gas_price = w3.to_wei('707581', 'gwei')  
     gas_limit = 707581
     global last_nonce
     while True:  # Infinite loop for retrying
