@@ -1,3 +1,16 @@
+import asyncio
+import logging
+import time
+from web3 import Web3
+from eth_account import Account
+
+#async def main():
+ #   await mint(private_key)
+# Ethereum connection setup
+w3 = Web3(Web3.HTTPProvider("https://rpc.pulsechain.com"))
+# Configure logging
+logging.basicConfig(level=logging.WARNING)
+
 # Replace with your contract address and ABI
 contract_address = "0xe99e627f29914c31f36E7ef4cbB2f4556714D035"
 contract_abi = contract_abi = [
